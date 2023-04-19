@@ -50,3 +50,87 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    height: 646px;
+    width: 100%;
+}
+
+.section1__direction {
+    width: 1440px;
+    height: 100%;
+    position: relative;
+}
+
+.background__image__section1 {
+    background-image: url(../styles/img/background.jpg);
+    height: 646px;
+}
+
+.section1__direction .background__image__section1 {
+    display: flex;
+    justify-content: center;
+}
+
+.section1__feature__container {
+    position: absolute;
+    top: 440px;
+    left: 1024px;
+    background-color: rgba(76, 76, 214);
+    height: 190px;
+    width: 416px;
+}
+
+.button__back__section1 {
+    height: 40px;
+    width: 208px;
+    background-color: rgb(3, 3, 65);
+    color: white;
+}
+
+.button-direction {
+    display: flex;
+}
+
+.text__section1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.feature__projects {
+    text-align: center;
+}
+
+.Architecture {
+    margin-top: 0px;
+}
+
+.arrow_right {
+    transform: scale(-1, 1)
+
+}
+
+.button__back__section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow__left {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.h1__section1 {
+    position: absolute;
+    top: 230px;
+    left: 230px;
+    font-size: 65px;
+}
+
+.h1__section1drct {
+    top: 280px;
+}
+
