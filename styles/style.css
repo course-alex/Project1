@@ -8,7 +8,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     padding: 0;
 }
 
-header {
+.header {
     height: 80px;
     width: 100%;
     display: flex;
@@ -16,13 +16,7 @@ header {
     align-items: center;   
 }
 
-.header__direction {
-    display: flex;
-    justify-content: space-around;
-    width: 1440px;
-}
-
-.logo {
+.header-logo img {
     height: 47px;
     width: 167px;
 }
@@ -35,7 +29,7 @@ header {
     align-items: center;
 }
 
-.header__logo__container {
+.header-logo {
     width: 100%;
     height: 100%;
     display: flex;
@@ -61,30 +55,21 @@ header {
     align-items: center;
 }
 
-.section1 {
+.university {
     display: flex;
     justify-content: center;
     height: 646px;
     width: 100%;
 }
 
-.section1__direction {
+.university__container {
     width: 1440px;
     height: 100%;
     position: relative;
-}
-
-.background__image__section1 {
     background-image: url(../styles/img/background.jpg);
-    height: 646px;
 }
 
-.section1__direction .background__image__section1 {
-    display: flex;
-    justify-content: center;
-}
-
-.section1__feature__container {
+.feature__container {
     position: absolute;
     top: 453px;
     left: 1024px;
@@ -93,19 +78,22 @@ header {
     width: 416px;
 }
 
-.button__back__section1 {
+.back {
     height: 40px;
     width: 208px;
     background-color: #292E3D;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button-direction {
+.button-container {
     display: flex;
     margin-top: 38px;
 }
 
-.text__section1 {
+.feature__container p {
     text-align: center;
     font-size: 24px;
 }
@@ -126,30 +114,22 @@ header {
 
 }
 
-.button__back__section1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .arrow__left {
     margin-right: 5px;
     margin-left: 5px;
 }
 
-.h1__section1 {
+.university__container h1 {
     position: absolute;
     top: 230px;
     left: 230px;
     font-size: 65px;
 }
 
-.h1__section1drct {
-    top: 280px;
-}
 
-
-.section2 {
+.reputation {
     width: 100%;
     height: 433px;
     display: flex;
@@ -157,14 +137,14 @@ header {
     align-items: center;
 }
 
-.section2__servies__container {
+.servies-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 
 }
 
-.section2__reputation {
+.reviews {
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -175,22 +155,22 @@ header {
     border-radius: 2%;
 }
 
-.section2__reputation1 {
+.reviews1 {
     margin-right: 66px;
 }
 
-.section2__reputation2 {
+.reviews3{
     margin-left: 66px;
 }
 
-.reputation-text-section2 {
+.reviews p {
     margin-top: 18px;
     color: #858EAD;
     font-size: 16px;
     margin-bottom: 40px;
 }
 
-.h3-best-services {
+.reviews h1 {
     margin-top: 18px;
     color: #3D445C;
     font-size: 20px;
@@ -198,26 +178,26 @@ header {
 
 
 
-.h3__section2__reputation {
+.reputatuin-container h3 {
     text-align: center;
     color: #292E3D;
     font-size: 36px;
     font-weight: 700;
 }
 
-.section3 {
+.about-us {
     height: 945px;
     width: 100%;
     position: relative;
 }
 
-.section3__container {
+.about-us__container {
     width: 1440px;
     display: flex;
     justify-content: center;
 }
 
-.bg__section3 {
+.background__about-us {
     background-image: url(../styles/img/backgroundMan.jpg);
     height: 669px;
     width: 902px;
@@ -228,7 +208,7 @@ header {
     top: calc(50% - 669px/2 - 64px);
 }
 
-.section3__block2__container {
+.about-us-block2 {
     position: relative;
     background-color: #2947A9;
     width: 488px;
@@ -241,7 +221,7 @@ header {
     top: 147px;
 }
 
-.button__section3 {
+.about-us-block2 button {
     position: absolute;
     width: 219px;
     height: 53px;
@@ -252,7 +232,7 @@ header {
     font-weight: bold;
 }
 
-.section3__text1__position {
+.position-text1 {
     position: absolute;
     width: 388px;
     height: 207px;
@@ -270,7 +250,7 @@ header {
     font-size: 20px;
 }
 
-.section3__about__us {
+.about-us-block2 h1 {
     position: absolute;
     width: 159px;
     height: 42px;
@@ -284,41 +264,38 @@ header {
     margin-top: -15px
 }
 
-.section3__text1 {
+.position-text1 p {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
 }
 
-.section4 {
+.opportunities {
     height: 608px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.section4__container {
+.opportunities__container {
     display: flex;
     text-align: center;
     padding-top: 122px;
     height: 608px;
     width: 1440px;
     box-shadow: 0px 0px 37px -2px rgba(4, 5, 8, 0.05);
-}
-
-.section4__posts {
-    width: 271px;
-    height: 181px;
-    background-color: #2947A9;
-}
-
-.section4__container {
     display: inline-block;
     justify-content: center;
     align-items: center;
 }
 
-.section4__posts {
+.opportunities__posts {
+    width: 271px;
+    height: 181px;
+    background-color: #2947A9;
+}
+
+.opportunities__posts {
     display: inline-block;
     width: 271px;
     height: 181px;
@@ -376,7 +353,7 @@ header {
     margin-top: 50px;
 }
 
-.section5 {
+.merits {
     width: 100%;
     height: 723px;
     display: flex;
@@ -385,14 +362,14 @@ header {
 
 }
 
-.secton5__direction {
+.merits__container {
     height: 100%;
     width: 1440px;
     position: relative;
     box-shadow: 0px 12px 16px -4px rgba(17, 24, 39, 0.1), 0px 4px 6px -2px rgba(17, 24, 39, 0.05);
 }
 
-.section5__h1__block2 {
+.merits__2block-container h1 {
     position: absolute;
     width: 359px;
     height: 140px;
@@ -402,7 +379,7 @@ header {
     font-size: 60px;
 }
 
-.section5__2block__text {
+.merits__2block-container p {
     overflow-wrap: break-word;
     width: 330px;
     font-size: 20px;
@@ -414,7 +391,7 @@ header {
     color: #525B7A;
 }
 
-.section5__button {
+.merits__2block-container button {
     position: absolute;
     width: 176px;
     height: 53px;
@@ -435,7 +412,7 @@ header {
     top: -30px;
 }
 
-.medals__section5 {
+.medals__merits {
     height: 150px;
     width: 280px;
     border: 1px solid white;
@@ -499,13 +476,13 @@ header {
     position: relative;
 }
 
-.h1__medals__section5 {
+.medals__merits h1 {
     font-size: 72px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.text__section5 {
+.medals__merits p {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
@@ -535,7 +512,7 @@ header {
     top: 110px;
 }
 
-.section6 {
+.our-projects {
     width: 100%;
     height: 300px;
     background-image: url(../styles/img/bgsection6.jpg);
@@ -550,7 +527,7 @@ header {
     margin: 0 auto;
 }
 
-.section6 button {
+.our-projects button {
     background-color: transparent;
     border: 2px solid white;
     color: white;
@@ -559,24 +536,24 @@ header {
     font-size: 18px;
 }
 
-.section6__content h2 {
+.our-projects__content h2 {
     color: white;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 30px;
 }
 
-.section6__content p {
+.our-projects__content p {
     color: white;
     font-size: 24px;
     font-weight: 400;
 }
 
-.section6__content span {
+.our-projects__content span {
     text-decoration: underline;
 }
 
-.section6__container {
+.our-projects__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
