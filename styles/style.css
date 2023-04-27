@@ -653,20 +653,23 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     height: 632px;
 }
 
-.table-container {
+.tabe-container {
     width: 1440px;
     display: flex;
-    text-align: center;
     flex-direction: column;
 }
 
-.table-container h1 {
+.tabe-container h1 {
     font-weight: 700;
     font-size: 36px;
     color: #292E3D;
 }
 
-.table-container p {
+.container-text {
+    text-align: center;
+}
+
+.tabe-container p {
     font-weight: 400;
     font-size: 20px;
     margin-top: 20px;
