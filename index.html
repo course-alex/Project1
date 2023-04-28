@@ -4,6 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -22,6 +25,7 @@
         </div>
     </header>
     <section class="university">
+        <div class="container university_container">
             <h1>Building things<br/>is our mission.</h1>
             <div class="feature__container">
                     <h3 class="feature__projects">Feature Projects</h3>
@@ -31,9 +35,10 @@
                     <button class="back">Next <img class="arrow__left arrow_right" src="./styles/img/arrow-left.svg"/></button>
                 </div>
             </div>
+        </div>
     </section>
     <section class="reputation">
-        <div class="reputation-container">
+        <div class="container">
                 <h3>Our Reputation</h3>
             <div class="servies-container">
                 <div class="reviews">
@@ -41,7 +46,7 @@
                     <h1>Best Services</h1>
                     <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
                 </div>
-                <div class="reviews reviews2">
+                <div class="reviews">
                     <img src="./styles/img/iconHeadPhons.svg"/>
                     <h1>Best Teams</h1> <p>Cursus semper tellus volutpat<br/>aliquet lacus.</p>
                 </div>
@@ -65,42 +70,42 @@
     </section>
     <section class="opportunities">
         <div class="container opportunities__container">
-            <div class="opportunities__posts post1">
+            <div class="opportunities__posts">
                 <div class="image__post__direction">
                     <img class="imagePost" src="./styles/img/housepost.svg"/>
                 </div>
                 <div class="stick__section4"></div>
                 <p class="text__section4">Construction</p>
             </div>
-            <div class="opportunities__posts post2"> 
+            <div class="opportunities__posts"> 
                 <div class="image__post__direction">
                     <img class="imagePost" src="./styles/img/Rectsngle.svg"/>
                 </div>
                 <div class="stick__section4"></div>
                 <p class="text__section4">Renovation</p>
             </div>
-            <div class="opportunities__posts post3">
+            <div class="opportunities__posts">
                 <div class="image__post__direction">
                     <img class="imagePost" src="./styles/img/handshake.svg"/>
                 </div>
                 <div class="stick__section4"></div>
                 <p class="text__section4">Consultation</p>
             </div>
-            <div class="opportunities__posts post4">
+            <div class="opportunities__posts">
                 <div class="image__post__direction">
                     <img class="imagePost" src="./styles/img/bag.svg"/>
                 </div>
                 <div class="stick__section4"></div>
                 <p class="text__section4">Repain Services</p>
             </div>
-            <div class="opportunities__posts post5">
+            <div class="opportunities__posts">
                 <div class="image__post__direction">
                     <img class="imagePost" src="./styles/img/scissors.svg"/>
                 </div>
                 <div class="stick__section4"></div>
                 <p class="text__section4">Architecture</p>
             </div>
-            <div class="opportunities__posts post6">
+            <div class="opportunities__posts">
                 <div class="image__post__direction">
                     <img class="imagePost" src="./styles/img/outlet.svg"/>
                 </div>
@@ -112,10 +117,10 @@
     </section>
     <section class="merits">
             <div class="medal__container">
-                <div class="medals__merits medal1"><div class="section5__image1"><img src="./styles/img/hand.svg"/></div><h1>84</h1><div class="sticks__sectoin5"></div><p>Happy Clients</p></div>
-                <div class="medals__merits medal2"><div class="section5__image2"><img src="./styles/img/illus.svg"/></div><h1>123</h1><div class="sticks__sectoin5"></div><p>Projects Completed</p></div>
-                <div class="medals__merits medal3"><div class="section5__image3"><img src="./styles/img/champion.svg"/></div><h1>37</h1><div class="sticks__sectoin5"></div><p>Award Win</p></div>
-                <div class="medals__merits medal4"><div class="section5__image4"><img src="./styles/img/pencilblocknote.svg"/></div><h1>30</h1><div class="sticks__sectoin5"></div><p>Years in Business</p></div>
+                <div class="medals__merits"><div class="section5__image1"><img src="./styles/img/hand.svg"/></div><h1>84</h1><div class="sticks__sectoin5"></div><p>Happy Clients</p></div>
+                <div class="medals__merits"><div class="section5__image2"><img src="./styles/img/illus.svg"/></div><h1>123</h1><div class="sticks__sectoin5"></div><p>Projects Completed</p></div>
+                <div class="medals__merits"><div class="section5__image3"><img src="./styles/img/champion.svg"/></div><h1>37</h1><div class="sticks__sectoin5"></div><p>Award Win</p></div>
+                <div class="medals__merits"><div class="section5__image4"><img src="./styles/img/pencilblocknote.svg"/></div><h1>30</h1><div class="sticks__sectoin5"></div><p>Years in Business</p></div>
             </div>
             <div class="merits__2block-container">
                 <h1>30 Years Experience</h1>
@@ -162,20 +167,22 @@
             </div>
         </div>
     </section>
-    <seciton class="table">
-        <div class="container tabe-container">
+    <section class="form">
+        <div class="container form-container">
             <div class="container-text">
                 <h1>What can us do for you?</h1>
                 <p>We are ready to work on a project of any complexity,<br/> whether it’s commercial or residential.</p>
             </div>
-            <div class="tables-container">
-                    <th class="tables"><input type="text"></th>
-                    <th class="tables"><input type="text"></th>
-                    <th class="tables"><input type="text"></th>
-                    <th class="tables"><input type="text"></th>
+            <div class="forms-container">
+                    <input type="text" placeholder="Your Name"/>
+                    <input type="text" placeholder="Email"/>
+                    <input type="text" placeholder="Reason"/>
+                    <input type="text" placeholder="Phone"/>
             </div>
             <div class="message">
-            <th class="tables"><input class="input" type="text"></th>
+                <form>
+                    <textarea class="textarea" name="Message" rows="4" cols="50" placeholder="Message"></textarea>
+                </form> 
         </div>
     </seciton>
     <section class="last-section">
@@ -190,7 +197,7 @@
                 <p>NEWSLETTER:</p>
                 <div>
                     <form action="#">
-                        <input type="email">
+                        <input type="email" placeholder="Your email Here">
                     </form>
                     <button>Subscribe</button>
                 </div>
@@ -203,8 +210,10 @@
             </div>
         </div>
     </section>
-    <footer class="container">
-        <p>TheBox Company © 2022. All Rights Reserved</p>
+    <footer class="footer">
+        <div>
+            <p>TheBox Company © 2022. All Rights Reserved</p>
+        </div>
     </footer>
 </body>
 </html>
