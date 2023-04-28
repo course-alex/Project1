@@ -668,7 +668,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     background-color: #FFFFFF;
 }
 
-.forms-container {
+.forms-container form{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -694,6 +694,19 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     display: flex;
     justify-content: center;
     margin-left: 408px;
+}
+
+.form-button {
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.form-button button {
+    background: #2947A9;
+    border-radius: 2px;
+    color: #FFFFFF;
+    width: 271px;
+    height: 53px;
 }
 
 .last-section {
@@ -758,11 +771,17 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     background: #2947A9;
 }
 
-footer div {
+.footer-container {
+    width: 1440px;
     display: flex;
     align-items: center;
 }
 
+
+.footer-container p{
+    margin-top: 30px;
+    font-size: 16px;
+}
 
 
 .div img{
